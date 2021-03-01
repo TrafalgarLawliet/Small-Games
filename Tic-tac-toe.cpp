@@ -1,39 +1,20 @@
-#include<iostream>
-using namepsace std;
-// Made some Changes
+#include <iostream>
+
+using namespace std;
 int
 main ()
 {
-  int i, j;
-  int c = 0;
-  int n = 9;
-  int a[n], p;
-  for (i = 1; i < 10; i++)
+  int i, j;			//For Loop
+  //char cross = "X", zero = "O";
+  int player = 1;		//For Input from Users
+  char board[10] = { '0', '1', '2', '3', '4', '5', '6', '7', '8', '9' };
+  i = 0;
+  do
     {
-      a[c] = i;
-      c++;
-      cout << i << " ";
-      if (i % 3 == 0)
-	{
-	  cout << "\n";
-	}
-    }				//End of Assigning
-
-  for (i = 1; i < 10; i++)
-    {
-      cin >> p;			//Input 
-      if (i % 2 == 1)
-	{
-	  a[p] = 20;
-	}
-      if (i % 2 == 0)
-	{
-	  a[p] = 30;
-	}
+      player = (player % 2) ? 1 : 2;
+      cout << "Board: " << board[i] << "\tPlayer: " << player << "\n";
+      i++, player++;
     }
-  for (i = 1; i < 10; i++)
-    {
-      cout << "a[" << i << "]: " << a[i] << "\n";
-    }
+  while (i <= 10);
   return 0;
 }
