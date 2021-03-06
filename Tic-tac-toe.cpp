@@ -31,10 +31,10 @@ int main()
 
   cout << endl;
 
-  cout<<"BOARD\n";
-  cout<<board[1]<<" "<<board[2]<<" "<<board[3]<<"\n";
-  cout<<board[5]<<" "<<board[5]<<" "<<board[6]<<"\n";
-  cout<<board[7]<<" "<<board[8]<<" "<<board[9]<<"\n";
+  cout << "BOARD\n";
+  cout << board[1] << " " << board[2] << " " << board[3] << "\n";
+  cout << board[5] << " " << board[5] << " " << board[6] << "\n";
+  cout << board[7] << " " << board[8] << " " << board[9] << "\n";
 
   return 0;
 }
